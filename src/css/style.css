@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    background-color: #674bb1;
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    text-align: left;
+    padding: 20px;
+}
+
+.header .logo {
+    width: 250px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "mockups text-hud";
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+main .mockups {
+    grid-area: mockups;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .mockups img {
+    width: 100%;
+}
+
+.text-hud {
+    grid-area: text-hud;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.text-hud h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.text-hud p {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.text-hud .btn-register {
+    background-color: #fff;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+main .btn-register .btn {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 3rem;
+    color: #674bb1;
+    transition: 0.3s;
+}
+
+main .text-hud .btn-register:hover {
+    background-color: #e980e7;
+    box-shadow: 2px 2px 5px 2px #00000028;
+}
+
+main .text-hud .btn:hover {
+    color: #fff;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: end;
+    padding: 30px 0;
+}
+
+.footer .social {
+    display: flex;
+    margin: 0 10px;
+}
+
+.footer .social i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer .social i:hover {
+    border: 2px solid #e980e7;
+    color: #e980e7;
+}
