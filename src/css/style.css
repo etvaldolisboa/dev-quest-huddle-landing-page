@@ -9,27 +9,29 @@ body {
     background: url(../images/bg-desktop.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-color: #674bb1;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
     display: flex;
-    text-align: left;
+    justify-content: start;
     padding: 20px;
 }
 
 .header .logo {
-    width: 250px;
+    max-width: 250px;
 }
 
 main {
     display: grid;
     grid-template-areas: "mockups text-hud";
     grid-template-columns: repeat(2, 1fr);
-
 }
 
 main .mockups {
@@ -38,7 +40,6 @@ main .mockups {
     align-items: center;
     justify-content: center;
     padding: 20px;
-
 }
 
 main .mockups img {
@@ -56,7 +57,7 @@ main .text-hud {
 }
 
 main .text-hud h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     color: #fff;
     font-weight: 500;
 }
@@ -67,48 +68,38 @@ main .text-hud p {
     font-weight: 400;
 }
 
-main .text-hud .btn-register {
+main .text-hud button {
     background-color: #fff;
+    color: #674bb1;
+    font-size: 2.5rem;
     width: 250px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
     border-radius: 50px;
     transition: 0.3s;
 }
 
-main .btn-register .btn {
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    font-size: 3rem;
-    color: #674bb1;
-    transition: 0.3s;
-}
-
-main .text-hud .btn-register:hover {
+main .text-hud button:hover {
     background-color: #e980e7;
+    color: #fff;
     box-shadow: 2px 2px 5px 2px #00000028;
 }
 
-main .text-hud .btn:hover {
-    color: #fff;
-}
-
-
-.footer {
+footer {
     display: flex;
     justify-content: end;
-    padding: 30px 0;
+    padding: 30px;
+    gap: 30px;
 }
 
-.footer .social {
-    display: flex;
-    margin: 0 10px;
+footer .social {
+    /* display: flex; */
 }
 
-.footer .social i {
+footer .social i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +114,7 @@ main .text-hud .btn:hover {
     transition: 0.3s;
 }
 
-.footer .social i:hover {
+footer .social i:hover {
     border: 2px solid #e980e7;
     color: #e980e7;
 }

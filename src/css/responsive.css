@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    body{
+        padding: 20px;
+    }
+    
     main .text-hud h1 {
         font-size: 2.5rem;
     }
@@ -7,15 +11,12 @@
         font-size: 1.5rem;
     }
 
-    main .text-hud .btn-register {
+    main .text-hud button {
         width: 150px;
-    }
-
-    main .text-hud .btn {
         font-size: 2rem;
     }
 
-    .footer .social i {
+    footer .social i {
         width: 45px;
         height: 45px;
         font-size: 20px;
@@ -52,11 +53,11 @@
         text-align: center;
     }
 
-    main .text-hud .btn-register {
+    main .text-hud button {
         width: 250px;
     }
 
-    .footer {
+    footer {
         justify-content: center;
     }
 
