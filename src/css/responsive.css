@@ -26,17 +26,16 @@
     body {
         background: url(../images/bg-mobile.svg);
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-position: top;
+        background-size: contain;
         background-color: #674bb1;
-        padding: 40px;
     }
 
-    .header {
+    body .header {
         padding: 20px 0;
     }
 
-    .header .logo {
+    body .header .logo {
         width: 150px;
     }
 
