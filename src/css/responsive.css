@@ -1,47 +1,22 @@
-@media (max-width: 768px) {
-    body{
-        padding: 20px;
-    }
-    
-    main .text-hud h1 {
-        font-size: 2.5rem;
-    }
-
-    main .text-hud p {
-        font-size: 1.5rem;
-    }
-
-    main .text-hud button {
-        width: 150px;
-        font-size: 2rem;
-    }
-
-    footer .social i {
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-    }
-}
-
-@media(max-width: 425px) {
+@media(max-width: 768px) {
     body {
         background: url(../images/bg-mobile.svg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
         background-color: #674bb1;
+        align-items: center;
     }
 
-    body .header {
-        padding: 20px 0;
+    header {
+        display: flex;
+        min-width: 100%;
     }
-
-    body .header .logo {
-        width: 150px;
+    header .logo {
+        max-width: 150px;
     }
 
     main {
-        /* display: grid; */
         grid-template-areas:
             'mockups'
             'text-hud';
@@ -54,11 +29,41 @@
     }
 
     main .text-hud button {
-        width: 250px;
+        width: 150px;
+        font-size: 1.5rem;
     }
 
-    footer {
-        justify-content: center;
+    footer .social i {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+
+    }
+}
+
+@media(max-width: 425px) {
+    body .header {
+        justify-content: start;
+        padding: 20px 0;
+    }
+
+    main .text-hud {
+        align-items: center;
+        text-align: center;
+    }
+
+    main .text-hud h1 {
+        font-size: 2.5rem;
+    }
+
+    main .text-hud p,
+    main .text-hud button {
+        font-size: 1.5rem;
+    }
+
+    main .text-hud button {
+        width: 200px;
+        height: 35px;
     }
 
 }

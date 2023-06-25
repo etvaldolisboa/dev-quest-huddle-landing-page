@@ -18,13 +18,13 @@ body {
     justify-content: space-between;
 }
 
-.header {
+header {
     display: flex;
     justify-content: start;
     padding: 20px;
 }
 
-.header .logo {
+header .logo {
     max-width: 250px;
 }
 
@@ -72,6 +72,7 @@ main .text-hud button {
     background-color: #fff;
     color: #674bb1;
     font-size: 2.5rem;
+    font-weight: 400;
     width: 250px;
     height: 50px;
     display: flex;
