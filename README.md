@@ -8,11 +8,11 @@ Esse projeto é uma representação de Landing Page desenvolvido como exercio pa
 - CSS
 
 ## Botão interativo
-Uma animação aparece quando selecionamos os botõe de **register** e das redeis sociais.
+Uma animação aparece quando selecionamos o botão de **register** e quando selecionamos as redes sociais.
 <img src='design/version-desktop.gif'>
 
 ## Versões responsivo
-Esse projeto tem três telas responsivas disponivel para desktop, tablets e dispositivos moveis.
+Esse projeto tem três telas responsivas disponiveis em desktop, tablets e dispositivos moveis.
 
 <img src='design/version-responsivo.gif'>
 
