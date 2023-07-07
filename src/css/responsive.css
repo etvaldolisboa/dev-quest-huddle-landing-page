@@ -59,12 +59,14 @@
         width: 200px;
         height: 35px;
     }
-li{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-}
-    i{
-        font-size: 15px;
+
+    ul li {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+    }
+
+    ul li a i {
+        font-size: 18px;
     }
 }
